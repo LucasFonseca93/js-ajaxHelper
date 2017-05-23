@@ -20,34 +20,25 @@
  * SOFTWARE.
  */
 
-
 /**
  * Example of use from a client.
  */
 
-/*
- * Retrieve a POST client.
- */
+// Retrieve a POST client.
 var client = _ajaxHelper.post('https://qapp.policiamilitar.mg.gov.br/oraculo/consultar');
 
-/*
- * Define the request callback
- */
+// Define the request callback
 client.callback(function (error, response) {
     // Always returns an error if it occurs and a response.
     console.log(error ? error : response);
 });
 
-/*
- * Define the request headers.
- */
+// Define the request headers.
 client.headers({
     'Content-Type' : 'application/json',
 });
 
-/*
- * Define the request body.
- */
+// Define the request body.
 client.payload({
     param_one: 'A',
     param_two: 2
@@ -58,10 +49,11 @@ client.send();
 
 
 /**
- * Example of online use (from a builder)
+ * Example of "inline" use (from a builder)
  */
 
 _ajaxHelper.post('https://qapp.policiamilitar.mg.gov.br/oraculo/consultar')
+
     .callback(function (error, response) {
         console.log(error ? error : response);
     })
