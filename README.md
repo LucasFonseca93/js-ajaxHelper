@@ -1,4 +1,4 @@
-# js-scriptInjector
+# js-ajaxHelper
 
 Extremely simple component to execute http requests.
 
