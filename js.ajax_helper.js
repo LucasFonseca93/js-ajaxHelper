@@ -152,35 +152,3 @@ var _ajaxHelper = {
     }
 
 };
-
-/*
-var client = _ajaxHelper.post('https://qapp.policiamilitar.mg.gov.br/oraculo/consultar');
-
-client.callback(function (error, response) {
-    console.log(response);
-});
-client.headers({
-    'Content-Type' : 'application/json',
-    'Authorization': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCIsImp0aSI6IjIwM2EwNjhmLWZhZTQtNDBkNC1iNjI2LTVkMmY3OWYxMjU4NiIsImlhdCI6MTQ5NTU1NTc0ODIyOSwiZXhwIjoxNDk1NTU1ODM0NjI5fQ.eyJnIjoiYzkyNjUwMyIsInAiOiJDVFMiLCJyIjoiRFRTIiwidSI6NzEsImYiOlsiNTMuMjY4Il0sImkiOiJEbDA0NlA4NjdNTUVGWlEtdWRuVzFxM28tVVBzcGU1RlVYbUl1WmJBIiwiayI6MX0.UfL8ZDS9ZNZOHYJiKf9zFNufecJr89CfvTFPIvQe2QE'
-});
-client.payload({
-    texto: 'Anderson Edson'
-});
-
-client.send();
-*/
-
-/*
-_ajaxHelper.get('https://qapp.policiamilitar.mg.gov.br/oraculo/recuperar/59243ca2f11763267fabf800')
-    .callback(function (error, response) {
-        console.log(error);
-        console.log(response);
-    })
-    .headers({
-        'Content-Type' : 'application/json'
-    })
-    .payload({
-       name: 'Lucas Fonseca'
-    })
-    .send();
-*/
